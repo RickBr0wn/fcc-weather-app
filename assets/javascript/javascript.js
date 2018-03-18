@@ -184,3 +184,8 @@ function startTime() {
         startTime()
     }, 500);
 }
+
+function convertTime(data){
+    let date = new Date(data);
+    console.log(date);
+}
