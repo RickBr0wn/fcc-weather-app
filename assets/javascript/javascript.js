@@ -27,13 +27,13 @@ $(document).ready(function () {
             var fahDegree = "°F";
             var iconAPI = weatherData.currently.icon;
 
-            document.getElementById("cel").onclick = function () {
-                celFunction();
-            };
+            // document.getElementById("cel").onclick = function () {
+            //     celFunction();
+            // };
 
-            document.getElementById("fah").onclick = function () {
-                fahFunction();
-            };
+            // document.getElementById("fah").onclick = function () {
+            //     fahFunction();
+            // };
 
             function celFunction() {
                 var fahTemp = weatherTemp;
