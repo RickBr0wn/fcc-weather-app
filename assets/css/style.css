@@ -1,3 +1,19 @@
-.hero-image{
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.hero-image {
     margin-top: 56px;
+    background: url('../images/blue-background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 900px;
 }
