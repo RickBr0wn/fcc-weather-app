@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var coordsAPI;
-    var city;
-    var country;
+    let coordsAPI;
+    let city;
+    let country;
 
     $.getJSON("https://ipinfo.io/json", function (locationData) {
         console.log(locationData);
@@ -14,18 +14,19 @@ $(document).ready(function () {
         $("#city").html(GPScity + " , " + country);
         $('#coordsAPI').html(coordsAPI);
 
-        var appID = "6628ca8235beb8aed232889dbef9e9b1";
-        var API = "https://api.darksky.net/forecast/" + appID + "/" + coordsAPI + "?callback=?";
+        let appID = "6628ca8235beb8aed232889dbef9e9b1";
+        let API = "https://api.darksky.net/forecast/" + appID + "/" + coordsAPI + "?callback=?";
 
         console.log(API);
 
         $.getJSON(API, function (weatherData) {
+            console.log(weatherData);
 
-            var weatherTemp = weatherData.currently.temperature;
-            var summary = weatherData.currently.summary;
-            var celDegree = "°C";
-            var fahDegree = "°F";
-            var iconAPI = weatherData.currently.icon;
+            let weatherTemp = weatherData.currently.temperature;
+            let summary = weatherData.currently.summary;
+            let celDegree = "°C";
+            let fahDegree = "°F";
+            let iconAPI = weatherData.currently.icon;
 
             // document.getElementById("cel").onclick = function () {
             //     celFunction();
@@ -36,9 +37,9 @@ $(document).ready(function () {
             // };
 
             function celFunction() {
-                var fahTemp = weatherTemp;
-                var celTemp = (fahTemp - 32) * 0.5556;
-                var adjustedCelTemp = celTemp.toFixed(2);
+                let fahTemp = weatherTemp;
+                let celTemp = (fahTemp - 32) * 0.5556;
+                let adjustedCelTemp = celTemp.toFixed(2);
 
                 $('#weatherTemp').html(adjustedCelTemp + celDegree);
             };
@@ -47,7 +48,7 @@ $(document).ready(function () {
                 $('#weatherTemp').html(weatherTemp + fahDegree);
             };
 
-            var icons = new Skycons({ "color": "white" });
+            let icons = new Skycons({ "color": "white" });
 
             switch (iconAPI) {
                 case "clear-day":
