@@ -2,19 +2,47 @@ body{
     margin: 0px;
     padding: 0px;
     color: #fff;
-}
-
-.container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.hero-image {
-    margin-top: 56px;
     background: url('../images/blue-background.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 900px;
+    font-size: 20px;
+}
+
+.container-fluid{
+    margin-top: 120px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.empty-space{
+    height: 75px;
+}
+
+.panel-color{
+    background-color: rgba(0, 48, 60, 0.6);
+    border-radius: 10px;
+}
+
+.main{
+    height: 500px;
+}
+
+.day-container{
+    padding-top: 1.25rem;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#time{
+    text-align: right;
 }
