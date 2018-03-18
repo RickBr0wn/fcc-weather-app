@@ -5,6 +5,7 @@ $(document).ready(function () {
     var country;
 
     $.getJSON("https://ipinfo.io/json", function (locationData) {
+        console.log(locationData);
         coordsAPI = locationData.loc;
         country = locationData.country;
         GPScity = locationData.city;
