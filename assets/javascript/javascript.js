@@ -12,8 +12,6 @@ $(document).ready(function () {
         $('#day').html(day);
         $('#date').html(date);
 
-
-
         console.log(locationData);
         coordsAPI = locationData.loc;
         country = locationData.country;
@@ -36,14 +34,14 @@ $(document).ready(function () {
             let celDegree = "°C";
             let fahDegree = "°F";
             let iconAPI = weatherData.currently.icon;
+            
+            document.getElementById("cel").onclick = function () {
+                celFunction();
+            };
 
-            // document.getElementById("cel").onclick = function () {
-            //     celFunction();
-            // };
-
-            // document.getElementById("fah").onclick = function () {
-            //     fahFunction();
-            // };
+            document.getElementById("fah").onclick = function () {
+                fahFunction();
+            };
 
             function celFunction() {
                 let fahTemp = weatherTemp;
@@ -115,7 +113,9 @@ $(document).ready(function () {
 
             $('#weatherTemp').html(celFunction());
             $('#weatherDescription').html(summary);
-
+            $('#lowest').html(weatherData.daily.data[0].temperatureLow + fahDegree + " @ " + weatherData.daily.data[0].temperatureLowTime);
+            $('#highest').html(weatherData.daily.data[0].temperatureHigh + fahDegree);
+            $('#sunTime').html(weatherData.daily.data[0]);
         });
     });
 });

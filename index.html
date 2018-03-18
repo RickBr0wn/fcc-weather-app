@@ -13,6 +13,10 @@
     <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
     <!-- Google Fonts Here -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Lato" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- CTRL Click Here -->
 </head>
@@ -63,15 +67,47 @@
             </div>
             <hr>
             <div class="main-info">
-                <div class="col-6">
-
-                </div>
-                <div class="col-6">
-                    
+                <div class="row">
+                    <div class="col-6 main-pad">
+                        <div id="city"></div>
+                        <div id="weatherTemp"></div>
+                        <div id="weatherDescription"></div>
+                        <button class="btnn" id="cel">°C</button>
+                        <button class="btnn" id="fah">°F</button>
+                    </div>
+                    <div class="col-6 main-pad">
+                        <canvas id="weatherIcon" width="200" height="200"></canvas>
+                    </div>
                 </div>
             </div>
-        </div>
-
+            <hr>
+            <div class="sm-info-bar">
+                <div class="row">
+                    <div class="col-4">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            <div id="lowest"></div>
+                    </div>
+                    <div class="col-4">
+                            <i class="far fa-sun"></i>
+                            <div id="sunTime"></div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                        <div id="highest"></div>
+                    </div>
+                    <div class="col-4">
+                            <i class="far fa-moon"></i>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="empty-space"></div>
+            <hr>
+            <div class="empty-space"></div>
     </main>
 
     <!-- <footer>

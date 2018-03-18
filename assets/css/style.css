@@ -25,10 +25,6 @@ body{
     border-radius: 10px;
 }
 
-.main{
-    height: 500px;
-}
-
 .day-container{
     padding-top: 1.25rem;
 }
@@ -45,4 +41,45 @@ hr {
 
 #time{
     text-align: right;
+}
+
+.main-pad{
+    padding-top: 3rem;
+    padding-left: 11rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+}
+
+#city{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#weatherTemp{
+    font-size: 82px;
+    font-weight: bolder;
+} 
+
+.btnn{
+    background: transparent;
+    border: white 1px solid;
+    color: #fff;
+    max-height: 35px;
+    margin-top: 0.25rem;
+    border-radius: 5px;
+}
+
+#lowest{
+    float: left;
+    padding-right: 20px;
+}
+
+#highest{
+    float: left;
+    padding-right: 20px;
+}
+
+.sm-info-bar{
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
