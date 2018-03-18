@@ -1,3 +1,85 @@
-.hero-image{
-    margin-top: 56px;
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    background: url('../images/blue-background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 20px;
+}
+
+.container-fluid{
+    margin-top: 120px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.empty-space{
+    height: 75px;
+}
+
+.panel-color{
+    background-color: rgba(0, 48, 60, 0.6);
+    border-radius: 10px;
+}
+
+.day-container{
+    padding-top: 1.25rem;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#time{
+    text-align: right;
+}
+
+.main-pad{
+    padding-top: 3rem;
+    padding-left: 11rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+}
+
+#city{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#weatherTemp{
+    font-size: 82px;
+    font-weight: bolder;
+} 
+
+.btnn{
+    background: transparent;
+    border: white 1px solid;
+    color: #fff;
+    max-height: 35px;
+    margin-top: 0.25rem;
+    border-radius: 5px;
+}
+
+#lowest{
+    float: left;
+    padding-right: 20px;
+}
+
+#highest{
+    float: left;
+    padding-right: 20px;
+}
+
+.sm-info-bar{
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
