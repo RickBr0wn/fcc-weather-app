@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Weather Forecast App - Created as part of the Free Code Camp Front End Development Certification</a>
+                    <a class="nav-link" href="#">Weather Forecast App - Created as part of the Free Code Camp Front End Development Certification.</a>
                 </li>
         </div>
     </nav>
@@ -58,56 +58,64 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-3">
+                <div class="col-6">
                     <div id="date"></div>
                 </div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3" id="time"></div>
+                <div class="col-6" id="time"></div>
             </div>
             <hr>
-            <div class="main-info">
-                <div class="row">
-                    <div class="col-6 main-pad">
-                        <div id="city"></div>
-                        <div id="weatherTemp"></div>
-                        <div id="weatherDescription"></div>
-                        <button class="btnn" id="cel">°C</button>
-                        <button class="btnn" id="fah">°F</button>
-                    </div>
-                    <div class="col-6 main-pad">
-                        <canvas id="weatherIcon" width="200" height="200"></canvas>
-                    </div>
-                </div>
+            <div class="main-pad">
+                <div id="city"></div>
+                <div id="coordsAPI"></div>
+                <div id="weatherTemp"></div>
+                <canvas id="weatherIcon" width="125" height="125"></canvas>
+                <div id="feelsLike"></div>
+                <div id="weatherDescription"></div>
+                <button class="btnn" id="cel">°C</button>
+                <button class="btnn" id="fah">°F</button>
             </div>
             <hr>
             <div class="sm-info-bar">
                 <div class="row">
                     <div class="col-4">
-                            <i class="fas fa-long-arrow-alt-down"></i>
-                            <div id="lowest"></div>
+                        <div id="windSpeed"></div>
                     </div>
                     <div class="col-4">
-                            <i class="far fa-sun"></i>
-                            <div id="sunTime"></div>
+                        <div id="humidity"></div>
                     </div>
-                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div id="ozone"></div>
+                    </div>
                 </div>
                 <div class="row">
+                        <div class="col-4">
+                            <hr class="sm-hr">
+                        </div>
+                        <div class="col-4">
+                            <hr class="sm-hr">
+                        </div>
+                        <div class="col-4">
+                            <hr class="sm-hr">
+                        </div>
+                    </div>
+                <div class="row">
                     <div class="col-4">
-                        <i class="fas fa-long-arrow-alt-up"></i>
-                        <div id="highest"></div>
+                        <div id="windGust"></div>
                     </div>
                     <div class="col-4">
-                            <i class="far fa-moon"></i>
+                        <div id="pressure"></div>
                     </div>
-                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div id="uv"></div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="empty-space"></div>
-            <hr>
-            <div class="empty-space"></div>
+        </div>
+        <div class="sm-empty-space"></div>
+        <div class="container main panel-color">
+            <div id="table"></div>
+        </div>
+
     </main>
 
     <!-- <footer>
@@ -126,6 +134,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="assets/javascript/javascript.js"></script>
+    <script src="assets/javascript/timeAndDate.js"></script>
+    <script src="assets/javascript/temperatureConvertors.js"></script>
+    <script src="assets/javascript/skycons.js"></script>
+    <script src="assets/javascript/msToTime.js"></script>
     <!-- CTRL Click Here -->
 </body>
 
