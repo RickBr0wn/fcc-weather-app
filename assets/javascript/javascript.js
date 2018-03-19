@@ -25,17 +25,20 @@ $(document).ready(function () {
             console.log(weatherData);
             skycons(iconAPI);
 
-            $('#weatherTemp').html(celFunction());
+            $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
             $('#weatherDescription').html(summary);
-            $('#lowest').html(weatherData.daily.data[0].temperatureLow + fahDegree + " @ " + weatherData.daily.data[0].temperatureLowTime);
-            $('#highest').html(weatherData.daily.data[0].temperatureHigh + fahDegree);
-            $('#sunTime').html(weatherData.daily.data[0]);
+
+            // $('#lowest').html(weatherData.daily.data[0].temperatureLow + fahDegree + " @ " + weatherData.daily.data[0].temperatureLowTime);
+            // $('#highest').html(weatherData.daily.data[0].temperatureHigh + fahDegree);
+            // $('#sunTime').html(weatherData.daily.data[0]);
 
             document.getElementById("cel").onclick = function(){
-                celFunction()
+                $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
             }
-            
-            document.getElementById("fah").onclick = fahFunction(fahDegree, weatherTemp);
+
+            document.getElementById("fah").onclick = function(){
+                $('#weatherTemp').html(weatherTemp + fahDegree);
+            }
         });
     });
 });
