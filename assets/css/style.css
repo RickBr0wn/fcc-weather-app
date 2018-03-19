@@ -47,9 +47,6 @@ hr {
 .main-pad{
     text-align: center;
     padding-top: 1.25rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-bottom: 1.25rem;
 }
 
 div#weatherDescription {
