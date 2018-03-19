@@ -8,6 +8,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
     font-size: 20px;
+    font-weight: 100;
 }
 
 .container-fluid{
@@ -29,6 +30,11 @@ body{
 
 .day-container{
     padding-top: 1.25rem;
+}
+
+.day-font{
+    font-size: 32px;
+    font-weight: bolder;
 }
 
 hr { 
@@ -79,7 +85,7 @@ div#weatherDescription {
 .sm-info-bar{
     padding-left: 3rem;
     padding-right: 3rem;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -89,5 +95,9 @@ div#weatherDescription {
 
 .sm-empty-space{
     height: 15px;
+}
+
+.row{
+    font-size: 14px;
 }
 
