@@ -23,7 +23,7 @@ $(document).ready(function () {
             let iconAPI = weatherData.currently.icon;
             
             console.log(weatherData);
-            skycons(iconAPI);
+            skycons(iconAPI, weatherIcon);
 
             $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
             $('#feelsLike').html("Feels Like: " + celFunction(celDegree, weatherData.currently.apparentTemperature));
@@ -35,8 +35,6 @@ $(document).ready(function () {
             $('#ozone').html("Ozone: " + weatherData.currently.ozone + "DU");
             $('#uv').html("UV Index: " + weatherData.currently.uvIndex);
 
-            
-
             document.getElementById("cel").onclick = function(){
                 $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
                 $('#feelsLike').html("Feels Like: " + celFunction(celDegree, weatherData.currently.apparentTemperature));
@@ -46,6 +44,8 @@ $(document).ready(function () {
                 $('#weatherTemp').html(weatherTemp + fahDegree);
                 $('#feelsLike').html("Feels Like: " + weatherData.currently.apparentTemperature + fahDegree);
             }
+
+            $('#table').html(createDays(weatherData));
         });
     });
 });
