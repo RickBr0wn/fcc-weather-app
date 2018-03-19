@@ -28,10 +28,12 @@ $(document).ready(function () {
             $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
             $('#feelsLike').html("Feels Like: " + celFunction(celDegree, weatherData.currently.apparentTemperature));
             $('#weatherDescription').html(summary);
-            $('#windSpeed').html("Wind Speed: " + weatherData.currently.windSpeed + "mph");
-            $('#windGust').html("Wind Max Speed: " + weatherData.currently.windGust + "mph");
+            $('#windSpeed').html("Wind Speed: " + weatherData.currently.windSpeed + "kph");
+            $('#windGust').html("Wind Max Speed: " + weatherData.currently.windGust + "kph");
             $('#humidity').html("Humidity: " + (weatherData.currently.humidity*100) + "%");
             $('#pressure').html("Air Pressure: " + weatherData.currently.pressure + "hPa");
+            $('#ozone').html("Ozone: " + weatherData.currently.ozone + "DU");
+            $('#uv').html("UV Index: " + weatherData.currently.uvIndex);
 
 
             // $('#lowest').html(weatherData.daily.data[0].temperatureLow + fahDegree + " @ " + weatherData.daily.data[0].temperatureLowTime);
