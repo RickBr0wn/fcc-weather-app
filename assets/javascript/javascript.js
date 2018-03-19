@@ -26,7 +26,13 @@ $(document).ready(function () {
             skycons(iconAPI);
 
             $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
+            $('#feelsLike').html("Feels Like: " + celFunction(celDegree, weatherData.currently.apparentTemperature));
             $('#weatherDescription').html(summary);
+            $('#windSpeed').html("Wind Speed: " + weatherData.currently.windSpeed + "mph");
+            $('#windGust').html("Wind Max Speed: " + weatherData.currently.windGust + "mph");
+            $('#humidity').html("Humidity: " + (weatherData.currently.humidity*100) + "%");
+            $('#pressure').html("Air Pressure: " + weatherData.currently.pressure + "hPa");
+
 
             // $('#lowest').html(weatherData.daily.data[0].temperatureLow + fahDegree + " @ " + weatherData.daily.data[0].temperatureLowTime);
             // $('#highest').html(weatherData.daily.data[0].temperatureHigh + fahDegree);
@@ -34,10 +40,12 @@ $(document).ready(function () {
 
             document.getElementById("cel").onclick = function(){
                 $('#weatherTemp').html(celFunction(celDegree, weatherTemp));
+                $('#feelsLike').html("Feels Like: " + celFunction(celDegree, weatherData.currently.apparentTemperature));
             }
 
             document.getElementById("fah").onclick = function(){
                 $('#weatherTemp').html(weatherTemp + fahDegree);
+                $('#feelsLike').html("Feels Like: " + weatherData.currently.apparentTemperature + fahDegree);
             }
         });
     });
