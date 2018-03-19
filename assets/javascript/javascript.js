@@ -35,10 +35,7 @@ $(document).ready(function () {
             $('#ozone').html("Ozone: " + weatherData.currently.ozone + "DU");
             $('#uv').html("UV Index: " + weatherData.currently.uvIndex);
 
-
-            // $('#lowest').html(weatherData.daily.data[0].temperatureLow + fahDegree + " @ " + weatherData.daily.data[0].temperatureLowTime);
-            // $('#highest').html(weatherData.daily.data[0].temperatureHigh + fahDegree);
-            // $('#sunTime').html(weatherData.daily.data[0]);
+            
 
             document.getElementById("cel").onclick = function(){
                 $('#weatherTemp').html(celFunction(celDegree, weatherTemp));

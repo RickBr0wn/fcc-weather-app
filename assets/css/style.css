@@ -23,7 +23,8 @@ body{
 .panel-color{
     background-color: rgba(0, 48, 60, 0.6);
     border-radius: 10px;
-    max-width: 850px;
+    max-width: 500px;
+    padding-bottom: 1.25rem;
 }
 
 .day-container{
@@ -51,6 +52,7 @@ hr {
 
 div#weatherDescription {
     margin-bottom: 22px;
+    font-size: 32px;
 }
 
 #city{
@@ -69,23 +71,23 @@ div#weatherDescription {
     color: #fff;
     max-height: 35px;
     margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
     border-radius: 5px;
     width: 100px;
 }
 
-/* #lowest{
-    float: left;
-    padding-right: 20px;
-}
-
-#highest{
-    float: left;
-    padding-right: 20px;
-} */
-
 .sm-info-bar{
     padding-left: 3rem;
     padding-right: 3rem;
-    font-size: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sm-hr{
+    max-width: 10px;
+}
+
+.sm-empty-space{
+    height: 15px;
 }
 

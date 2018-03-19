@@ -64,21 +64,15 @@
                 <div class="col-6" id="time"></div>
             </div>
             <hr>
-            <div class="main-info">
-                <div class="row">
-                    <div class="col-md-6 main-pad">
-                        <div id="city"></div>
-                        <div id="coordsAPI"></div>
-                        <div id="weatherTemp"></div>
-                        <div id="feelsLike"></div>
-                        <div id="weatherDescription"></div>
-                        <button class="btnn" id="cel">°C</button>
-                        <button class="btnn" id="fah">°F</button>
-                    </div>
-                    <div class="col-md-6 main-pad">
-                        <canvas id="weatherIcon" width="300" height="300"></canvas>
-                    </div>
-                </div>
+            <div class="main-pad">
+                <div id="city"></div>
+                <div id="coordsAPI"></div>
+                <div id="weatherTemp"></div>
+                <canvas id="weatherIcon" width="125" height="125"></canvas>
+                <div id="feelsLike"></div>
+                <div id="weatherDescription"></div>
+                <button class="btnn" id="cel">°C</button>
+                <button class="btnn" id="fah">°F</button>
             </div>
             <hr>
             <div class="sm-info-bar">
@@ -94,6 +88,17 @@
                     </div>
                 </div>
                 <div class="row">
+                        <div class="col-4">
+                            <hr class="sm-hr">
+                        </div>
+                        <div class="col-4">
+                            <hr class="sm-hr">
+                        </div>
+                        <div class="col-4">
+                            <hr class="sm-hr">
+                        </div>
+                    </div>
+                <div class="row">
                     <div class="col-4">
                         <div id="windGust"></div>
                     </div>
@@ -101,14 +106,16 @@
                         <div id="pressure"></div>
                     </div>
                     <div class="col-4">
-                            <div id="uv"></div>
+                        <div id="uv"></div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="empty-space"></div>
-            <hr>
-            <div class="empty-space"></div>
+        </div>
+        <div class="sm-empty-space"></div>
+        <div class="container main panel-color">
+            <div id="table"></div>
+        </div>
+
     </main>
 
     <!-- <footer>
